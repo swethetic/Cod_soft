@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Web Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Elite Web Solutions</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Innovative Web Solutions for Modern Businesses</h2>
+                <p>Elevate your digital presence with our tailored web development and design services.</p>
+                <a href="#about" class="btn">Discover More</a>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <img src="about-us.jpg" alt="About Us Image" class="section-image">
+                <p>At Elite Web Solutions, we are passionate about crafting exceptional websites and digital experiences. With a team of skilled professionals, we deliver high-quality solutions that drive results and exceed client expectations.</p>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service">
+                        <img src="web-development.jpg" alt="Web Development Image" class="service-image">
+                        <h3>Web Development</h3>
+                        <p>Our web development services are designed to create robust and scalable websites. From front-end to back-end development, we ensure seamless performance and user experience.</p>
+                        <ul>
+                            <li>Custom Website Development</li>
+                            <li>Responsive Design</li>
+                            <li>E-commerce Solutions</li>
+                            <li>Content Management Systems (CMS)</li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <img src="digital-marketing.jpg" alt="Digital Marketing Image" class="service-image">
+                        <h3>Digital Marketing</h3>
+                        <p>Our digital marketing strategies are tailored to your business goals. We focus on increasing your online visibility, driving traffic, and generating leads through effective campaigns.</p>
+                        <ul>
+                            <li>Search Engine Optimization (SEO)</li>
+                            <li>Social Media Marketing</li>
+                            <li>Pay-Per-Click (PPC) Advertising</li>
+                            <li>Email Marketing</li>
+                        </ul>
+                    </div>
+                    <div class="service">
+                        <img src="graphic-design.jpg" alt="Graphic Design Image" class="service-image">
+                        <h3>Graphic Design</h3>
+                        <p>Our creative team delivers stunning graphic designs that reflect your brand identity. We produce visually appealing materials that engage your audience and enhance your brand image.</p>
+                        <ul>
+                            <li>Brand Identity Design</li>
+                            <li>Marketing Collateral</li>
+                            <li>Social Media Graphics</li>
+                            <li>Print Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="container">
+                <h2>Our Portfolio</h2>
+                <img src="portfolio.jpg" alt="Portfolio Image" class="section-image">
+                <p>Explore our diverse portfolio showcasing our expertise in web development, digital marketing, and graphic design. We take pride in delivering projects that meet and exceed our clients' expectations.</p>
+                <!-- Add your portfolio items here -->
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <img src="contact-logo.png" alt="Contact Us Logo" class="section-logo">
+                <p>We'd love to hear from you. Reach out to us for any inquiries or to discuss your project requirements.</p>
+                <a href="mailto:info@elitewebsolutions.com" class="btn">Email Us</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Elite Web Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
